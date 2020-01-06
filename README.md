@@ -21,25 +21,25 @@ docker-compose up -dを実行した後
 
 - タイトルテーブル  
 
-|カラム|値|型|
-|---|---|---|
-|ID|1|INT(10000)|
-|タイトル|YYYYMMDDhhmmss|INT(15)|
-|最終書込日時|YYYYMMDDhhmmss|INT(15)|
-|書込総数|999|INT(4)|
+|概要|カラム名|値|型|
+|---|---|---|---|
+|ID|ID|1|INT(10000)|
+|スレタイID|title_id|YYYYMMDDhhmmss|INT(15)|
+|スレタイ|title|ネットスラング一覧スレ|VARCHAR(200)|
+|最終書込日時|last_com|YYYYMMDDhhmmss|INT(15)|
+|書込総数|total_com|999|INT(4)|
 
 - コメントテーブル  
 
 |カラム|値|型|
 |---|---|---|
-|ID|1|INT(10000)|
-|スレタイID|YYYYMMDDhhmmss|INT(15)|
-|スレタイ|ネットスラング一覧スレ|VARCHAR(200)|
-|書込者|通行人A|VARCHAR(50)|
-|書込|おわた！|VARCHAR(20000)|
-|書込日時|YYYYMMDDhhmmss|INT(15)|
+|ID|ID|1|INT(10000)|
+|スレタイID|title_id|YYYYMMDDhhmmss|INT(15)|
+|書込者|user|通行人A|VARCHAR(50)|
+|書込|comment|おわた！|VARCHAR(20000)|
+|書込日時|date_com|YYYYMMDDhhmmss|INT(15)|
 
-※テーブル名はスレタイ  
+※テーブル名はスレタイID  
 
 ## PHP(外観)
 
