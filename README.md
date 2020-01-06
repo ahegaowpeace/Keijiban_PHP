@@ -21,12 +21,15 @@ docker-compose up -dを実行した後
 
 - タイトルテーブル  
 
-|  カラム  |  型  |  Null  |  Def  |  Ext  |
-| --- | --- | --- | --- | --- |
-| ID | INT(10000) | No | | PrmKey |
+|カラム|値|    型    |Null|Def|  Ext  |
+| ---  |---|   ---   |---| --- | --- |
+|  ID  |1 |INT(10000)| No |   |PrmKey|
+
 - コメントテーブル  
-|  TH  |  TH  |  TH  |  TH  |  TH  |
+
+|  カラム  |  TH  |  TH  |  TH  |  TH  |
 | --- | --- | --- | --- | --- |
 | ID | INT(10000) | No | | PrmKey |
+| ID | INT(10000) | No | | |
 
 ## PHP
