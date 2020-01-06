@@ -34,9 +34,9 @@ docker-compose up -dを実行した後
 |---|---|---|
 |ID|1|INT(10000)|
 |スレタイID|YYYYMMDDhhmmss|INT(15)|
-|スレタイ|ネットスラング一覧スレ||
-|書込者|通行人A||
-|書込|おわた！||
+|スレタイ|ネットスラング一覧スレ|VARCHAR(200)|
+|書込者|通行人A|VARCHAR(50)|
+|書込|おわた！|VARCHAR(20000)|
 |書込日時|YYYYMMDDhhmmss|INT(15)|
 
 ※テーブル名はスレタイ  
