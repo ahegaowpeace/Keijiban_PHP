@@ -19,25 +19,27 @@ docker-compose up -dを実行した後
 # 要件
 ## DB
 
+- keijiban_db
+
 - タイトルテーブル  
 
 |概要|カラム名|値|型|
 |---|---|---|---|
-|ID|ID|1|INT(10000)|
-|スレタイID|title_id|YYYYMMDDhhmmss|INT(15)|
+|ID|id|1|INT(4)|
+|スレタイID|title_id|YYYYMMDDhhmmss|BIGINT(15)|
 |スレタイ|title|ネットスラング一覧スレ|VARCHAR(200)|
-|最終書込日時|last_com|YYYYMMDDhhmmss|INT(15)|
+|最終書込日時|last_com|YYYYMMDDhhmmss|DATETIME|
 |書込総数|total_com|999|INT(4)|
 
 - コメントテーブル  
 
 |カラム|値|型|
 |---|---|---|
-|ID|ID|1|INT(10000)|
+|ID|id|1|INT(4)|
 |スレタイID|title_id|YYYYMMDDhhmmss|INT(15)|
-|書込者|user|通行人A|VARCHAR(50)|
-|書込|comment|おわた！|VARCHAR(20000)|
-|書込日時|date_com|YYYYMMDDhhmmss|INT(15)|
+|書込者|user|通行人A|VARCHAR(100)|
+|書込|comment|おわた！|TEXT|
+|書込日時|date_com|YYYYMMDDhhmmss|DATETIME|
 
 ※テーブル名はスレタイID  
 
