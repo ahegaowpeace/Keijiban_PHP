@@ -21,15 +21,23 @@ docker-compose up -dを実行した後
 
 - タイトルテーブル  
 
-|カラム|値|    型    |Null|Def|  Ext  |
-| ---  |---|   ---   |---| --- | --- |
-|  ID  |1 |INT(10000)| No |   |PrmKey|
+|カラム|値|型|
+|---|---|---|
+|ID|1|INT(10000)|
+|タイトル|YYYYMMDDhhmmss|INT(15)|
+|最終書込日時|YYYYMMDDhhmmss|INT(15)|
+|書込総数|999|INT(4)|
 
 - コメントテーブル  
 
-|  カラム  |  TH  |  TH  |  TH  |  TH  |
-| --- | --- | --- | --- | --- |
-| ID | INT(10000) | No | | PrmKey |
-| ID | INT(10000) | No | | |
+※テーブル名はスレタイ
+|カラム|値|型|
+|---|---|---|
+|ID|1|INT(10000)|
+|スレタイID|YYYYMMDDhhmmss|INT(15)|
+|スレタイ|ネットスラング一覧スレ||
+|書込者|通行人A||
+|書込|おわた！||
+|書込日時|YYYYMMDDhhmmss|INT(15)|
 
 ## PHP
