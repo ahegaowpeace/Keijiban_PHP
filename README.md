@@ -5,11 +5,13 @@ lSELinuxを無効化する。
 setenfoce 0
 docker-compose up -d
 ```
-## LAMP基本
-docker-compose up -dを実行した後は、
-phpからdbに接続する際のホスト名をlocalhostではなくコンテナ名とする
 ## プロセス起動
-mysqlコンテナにログインしてshellを実行する必要あり
+docker-compose up -dを実行した後
+
+- mysqlコンテナ
+	- initスクリプトを実行し初期テーブルを作成する
+- phpコンテナ
+	- phpからdbに接続する際のホスト名をlocalhostではなくコンテナ名とする
 ## その他
 本当に真っ白でやりたければdataディレクトリは削除
 

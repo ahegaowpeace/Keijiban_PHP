@@ -14,7 +14,7 @@
 	define('DB_DATABASE', 'test_db');
 	define('DB_USERNAME', 'root');
 	define('DB_PASSWORD', 'password');
-	define('PDO_DSN', 'mysql:host=b4da929b46b0;dbname=' . DB_DATABASE);
+	define('PDO_DSN', 'mysql:host=7df3091a4378;dbname=' . DB_DATABASE);
 	$sql = 'SELECT * from master_table';
 
 	try {
