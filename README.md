@@ -26,9 +26,9 @@ docker-compose up -dを実行した後
 |概要|カラム名|値|型|
 |---|---|---|---|
 |ID|id|1|INT(4)|
-|スレタイID|title_id|YYYYMMDDhhmmss|BIGINT(15)|
+|スレタイID|title_id|YYYY_MMDD_hhmmss|VARCHAR(15)|
 |スレタイ|title|ネットスラング一覧スレ|VARCHAR(200)|
-|最終書込日時|last_com|YYYYMMDDhhmmss|DATETIME|
+|最終書込日時|last_com|YYYY-MM-DD hh:mm:ss|DATETIME|
 |書込総数|total_com|999|INT(4)|
 
 ※YYYYMMDDhhmmssはINT型では表せない
@@ -38,13 +38,11 @@ docker-compose up -dを実行した後
 |カラム|値|型|
 |---|---|---|
 |ID|id|1|INT(4)|
-|スレタイ|title_id|YYYYMMDDhhmmss|INT(15)|
 |書込者|user|通行人A|VARCHAR(100)|
 |書込|comment|おわた！|TEXT|
-|書込日時|date_com|YYYYMMDDhhmmss|DATETIME|
+|書込日時|date_com|YYYY-MM-DD hh:mm:ss|DATETIME|
 
 ※テーブル名はスレタイID   
-※スレタイを持たせているのは改修時に分かりやすいから
 ※テーブル名をスレタイIDにしたいけれど、数字のみ、ハイフンが使えないので2019_0923_1713みたいにするかも
 
 ## PHP(外観)

@@ -8,7 +8,7 @@
 	define('DB_DATABASE', 'keijiban_db');
 	define('DB_USERNAME', 'root');
 	define('DB_PASSWORD', 'password');
-	define('PDO_DSN', 'mysql:host=4d9c192b9cf2;dbname=' . DB_DATABASE);
+	define('PDO_DSN', 'mysql:host=22ca6c9f306b;dbname=' . DB_DATABASE);
 
 	/**************************************/
 	/*  Title Table から表示用データ抽出  */
@@ -30,12 +30,12 @@
 		$arr = $db->query($sql, PDO::FETCH_ASSOC);
 		foreach($arr as $que_res) {
 			if ($que_res === reset($arr)) {
-				echo "これは何の条件分岐でしょうか";
+				echo "これは何の条件分岐";
 			}
 			$title_num = $que_res['id'];
 			echo $title_num, "<br><br>";
 			if ($que_res === end($arr)) {
-				echo "これは何の条件分岐でしょうか";
+				echo "これは何の条件分岐";
 			}
 		}
 		$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
