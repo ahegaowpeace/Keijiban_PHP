@@ -9,7 +9,8 @@ docker-compose up -d
 docker-compose up -dを実行した後は、
 phpからdbに接続する際のホスト名をlocalhostではなくコンテナ名とする
 ## プロセス起動
-mysqlコンテナにログインしてshellを実行する必要あり
+mysqlコンテナにログインしてshellを実行する必要あり  
+port=3000/tcp(セキュリティグループ)
 ## その他
 本当に真っ白でやりたければdataディレクトリは削除
 
