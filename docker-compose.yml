@@ -1,0 +1,35 @@
+version: '2'
+services:
+  # php:apache
+  app:
+    build:
+      context: ./php
+      dockerfile: Dockerfile
+    container_name: php_apa
+    # :zを付与することでコンテナにマウントされたボリュームにラベル付けを行う(SELinux避け)
+    volumes:
+      - ./php:/var/www/html:z
+    ports:
+      - 80:80
+    depends_on:
+      - db
+    links:
+      - db:mysql
+
+  # MySQL
+  db:
+    image: mysql:5.7
+    container_name: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: test_db
+      MYSQL_USER: root
+      MYSQL_PASSWORD: password
+      TZ: 'Asiz/Tokyo'
+    command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    volumes:
+    - ./docker/db/data:/var/lib/mysql:z
+    - ./docker/db/my.cnf:/etc/mysql/conf.d/my.cnf:z
+    - ./docker/db/sql:/docker-entrypoint-initdb.d:z
+    ports:
+    - 3306:3306
