@@ -30,6 +30,7 @@ docker-compose up -dを実行した後
 |スレタイ|title|ネットスラング一覧スレ|VARCHAR(200)|
 |最終書込日時|last_com|YYYYMMDDhhmmss|DATETIME|
 |書込総数|total_com|999|INT(4)|
+
 ※YYYYMMDDhhmmssはINT型では表せない
 
 - コメントテーブル  
