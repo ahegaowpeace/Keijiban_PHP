@@ -24,7 +24,6 @@ docker-compose up -dを実行した後
 |  カラム  |  型  |  Null  |  Def  |  Ext  |
 | --- | --- | --- | --- | --- |
 | ID | INT(10000) | No | | PrmKey |
-
 - コメントテーブル  
 |  TH  |  TH  |  TH  |  TH  |  TH  |
 | --- | --- | --- | --- | --- |
