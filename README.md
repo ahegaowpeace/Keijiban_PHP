@@ -38,6 +38,7 @@ docker-compose up -dを実行した後
 |書込者|通行人A||
 |書込|おわた！||
 |書込日時|YYYYMMDDhhmmss|INT(15)|
+
 ※テーブル名はスレタイ  
 
 ## PHP
