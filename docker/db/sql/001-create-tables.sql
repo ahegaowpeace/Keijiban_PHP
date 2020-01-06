@@ -34,8 +34,8 @@ create table 2020_0923_1357
 
 ---- insert ----
 START TRANSACTION;
-insert into title_table (title_id, title, last_com, total_com) value (2019_0923_1357, 'テスト用ダミースレ', '2019-09-23 13:57', 1);
-insert into title_table (title_id, title, last_com, total_com) value (2020_0923_1357, 'テスト用ダミースレ2', '2020-09-23 13:57', 1);
+insert into title_table (title_id, title, last_com, total_com) value ('2019_0923_1357', 'テスト用ダミースレ', '2019-09-23 13:57', 1);
+insert into title_table (title_id, title, last_com, total_com) value ('2020_0923_1357', 'テスト用ダミースレ2', '2020-09-23 13:57', 1);
 insert into 2019_0923_1357 (user, comment, date_com) value ('通行人A', 'おわた！', '2019-09-23 13:57');
 insert into 2020_0923_1357 (user, comment, date_com) value ('通行人B', 'おわた！', '2020-09-23 13:57');
 COMMIT;
