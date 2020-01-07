@@ -11,7 +11,7 @@
 	/**********************************/
 	/*       スレタイエリア開始       */
 	/**********************************/
-	echo "<div style=\"padding: 10px; border: 1px solid#3399FF;\" class=\"sleti_block\">"
+	echo "<div style=\"padding: 10px; border: 1px solid#3399FF;\" class=\"sleti_area\">";
 
 	/**********************************/
 	/*            DB諸情報            */
@@ -46,7 +46,6 @@
 				echo "これは何の条件分岐";
 			}
 			$title_num = $que_res['id'];
-			echo $title_num, "<br><br>";
 			if ($que_res === end($arr)) {
 				echo "これは何の条件分岐";
 			}
@@ -66,11 +65,11 @@
 		$arr = $db->query($sql2, PDO::FETCH_ASSOC);
 		foreach($arr as $que_res) {
 			if ($que_res === reset($arr)) {
-				echo "<br>";
+				echo "";
 			}
 			echo "<p class=\"slti\">【", $que_res['last_com'], "】 ", $que_res['title'], "</p>";
 			if ($que_res === end($arr)) {
-				echo "<br>";
+				echo "";
 			}
 		}
 
@@ -84,7 +83,10 @@
 	/**********************************/
 	/*       スレタイエリア終了       */
 	/**********************************/
-	echo "</div>"
+	echo "</div>";
 ?>
-	<div style="padding: 10px; 
+	<div style="padding: 10px; border: 1px solid #3399FF;" class="make_sled_area">
+		概要
+	</div>
+</body>
 </html>

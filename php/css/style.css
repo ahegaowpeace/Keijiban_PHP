@@ -2,21 +2,21 @@ body {
     font-size:20px;
 }
 
-.sleti_block {
+.sleti_area {
     margin-left:20%;
     margin-right:20%;
     margin-bottom:50px;
     margin-top:50px;
     white-space: nowrap;
     overflow:scroll;
-    height:200px;
+    height:400px;
 }
 
 .slti {
 }
 
 
-.comment_block {
+.comment_area {
     margin-left:20%;
     margin-right:20%;
     margin-bottom:50px;
@@ -29,7 +29,7 @@ body {
 .comment {
 }
 
-.make_sled_block {
+.make_sled_area {
     margin-left:20%;
     margin-right:20%;
     margin-bottom:50px;
