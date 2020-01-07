@@ -7,12 +7,8 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+	<div style="padding: 10px; border: 1px solid#3399FF;" class="sleti_block">
 <?php
-	/**********************************/
-	/*       スレタイエリア開始       */
-	/**********************************/
-	echo "<div style=\"padding: 10px; border: 1px solid#3399FF;\" class=\"sleti_block\">"
-
 	/**********************************/
 	/*            DB諸情報            */
 	/*コンテナから見えるホスト名を設定*/
@@ -81,10 +77,5 @@
 		echo $e->getMessage();
 		exit;
 	}
-	/**********************************/
-	/*       スレタイエリア終了       */
-	/**********************************/
-	echo "</div>"
 ?>
-	<div style="padding: 10px; 
 </html>
