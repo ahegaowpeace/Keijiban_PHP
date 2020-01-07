@@ -1,3 +1,4 @@
+# 前書き
 ## docker-composeをインストール
 ```
 curl -L https://github.com/docker/compose/releases/download/1.6.2/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
@@ -13,8 +14,13 @@ docker-compose up -dを実行した後
 	- port=3000/tcp
 - phpコンテナ
 	- phpからdbに接続する際のホスト名をlocalhostではなくコンテナ名とする
+	- GlobalIPを変数に代入
 ## その他
-本当に真っ白でやりたければdataディレクトリは削除
+
+- 本当に真っ白でやりたければdataディレクトリは削除  
+- https未対応
+- クロスサイトスクリプティング未対応
+- 改行未対応
 
 # 要件
 ## DB
