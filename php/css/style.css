@@ -23,6 +23,7 @@ body {
     margin-right:15%;
     margin-bottom:50px;
     padding:20px;
+    font-size:20px;
 }
 
 .comment_header {
@@ -33,6 +34,36 @@ body {
 .comment {
     margin-top:0;
     margin-bottom:30px;
+}
+
+/************************************************************************/
+/*input系は要素定義が特殊でuser-agent stylesheetを呼ぶので個別に指定する*/
+/************************************************************************/
+.input_com_block {
+    text-align:center;
+}
+
+.input_name {
+    margin-bottom:20px;
+    font-size:20px;
+}
+
+.input_fname {
+    margin-bottom:20px;
+    font-size:20px;
+}
+
+.input_comment {
+    margin-bottom:20px;
+    font-size:20px;
+    width:70%;
+    height:300px;
+}
+
+.input_com_button {
+    margin-bottom:20px;
+    font-size:20px;
+    width:70%;
 }
 
 .make_sled_area {
