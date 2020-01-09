@@ -88,13 +88,15 @@
         /**********************************/
 	$input_name = $_POST['input_name'];
 	$input_comment = $_POST['input_comment'];
-	
+	$sql = '';
 
-	if ( strcmp($input_comment, "コメント") == 0 ) {
+	//リロードの度にINSERTしないようにクエリ変数初期化
+	//commentブロックのレンダリング前だから$input_commentがNULLの場合も弾く必要がある
+
+	if ( strcmp($input_comment, "コメント") == 0 || strcmp($input_comment, "") == 0 ) {
 		echo "あのねあのねコメントが空なの";
 	} else {
-		$sql = "INSERT INTO {$title_id} (user, comment, date_com) value (\'{$input_name}\', \'{$input_comment}\', \'2019-09-23 13:57\')";
-		echo $sql;
+		$sql = "INSERT INTO {$title_id} (user, comment, date_com) value ('{$input_name}', '{$input_comment}', '2019-09-23 13:57')";
 		try {
 			$db = new PDO(PDO_DSN,DB_USERNAME,DB_PASSWORD);
 			$arr = $db->query($sql, PDO::FETCH_ASSOC);
@@ -112,7 +114,6 @@
 	echo "<div style=\"border: 1px solid #3399FF;\" class=\"comment_area\">";
 	echo "<p style=\"margin-top:0; margin-bottom:20px; font-size:15px;\">直近のコメへ移動</p>";
 
-//	$sql2 = 'SELECT * from '.$_SERVER['QUERY_STRING'];
 	$sql2 = 'SELECT * from '.$title_id;
 	try {
 		$db = new PDO(PDO_DSN,DB_USERNAME,DB_PASSWORD);
