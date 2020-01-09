@@ -46,6 +46,7 @@ body {
 .input_name {
     margin-bottom:20px;
     font-size:20px;
+    padding:5px;
 }
 
 .input_fname {
@@ -56,6 +57,7 @@ body {
 .input_comment {
     margin-bottom:20px;
     font-size:20px;
+    padding:5px;
     width:70%;
     height:300px;
 }
@@ -71,4 +73,25 @@ body {
     margin-right:15%;
     margin-bottom:50px;
     padding:20px;
+}
+
+.make_sled_block {
+    text-align:center;
+}
+
+.input_sleti {
+    margin-bottom:20px;
+    font-size:20px;
+    padding:5px;
+    width:70%;
+}
+
+.button_sle {
+    margin-bottom:20px;
+    font-size:20px;
+    width:70%;
+}
+
+.backtop {
+    text-align:center;
 }

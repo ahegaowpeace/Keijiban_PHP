@@ -56,7 +56,7 @@
 	/*                 (2)                */
 	/*  title_tableから更新日時など抽出   */
 	/**************************************/
-	$sql = 'SELECT * from title_table';
+	$sql = 'SELECT * FROM title_table ORDER BY id DESC';
 	try {
 		$db = new PDO(PDO_DSN,DB_USERNAME,DB_PASSWORD);
 		$arr = $db->query($sql, PDO::FETCH_ASSOC);
