@@ -11,7 +11,7 @@ docker-compose up -dを実行した後
 
 - mysqlコンテナ
 	- initスクリプトを実行し初期テーブルを作成する
-	- initスクリプトを一部変更する(最初はdaatabaseが存在しないのでこける)
+	- initスクリプトを一部変更する(最初はdaatabaseが存在しないのでこけるのでそれを一時消す)
 	- port=3000/tcp
 - phpコンテナ
 	- phpからdbに接続する際のホスト名をlocalhostではなくコンテナ名とする
