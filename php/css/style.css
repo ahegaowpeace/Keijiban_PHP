@@ -1,3 +1,6 @@
+/************************/
+/*スレタイ・コメント部分*/
+/************************/
 body {
     font-size:22px;
 }
@@ -36,7 +39,21 @@ body {
     margin-bottom:30px;
 }
 
+/************************/
+/*スレタイ・コメント部分*/
+/************************/
+.explain_block {
+    text-align:center;
+    margin-bottom:30px;
+    margin-bottom:30px;
+}
+
+.explain_list {
+    text-align:left;
+}
+
 /************************************************************************/
+/*                               POST部分                               */
 /*input系は要素定義が特殊でuser-agent stylesheetを呼ぶので個別に指定する*/
 /************************************************************************/
 .input_com_block {
@@ -79,7 +96,7 @@ body {
     text-align:center;
 }
 
-.input_sleti {
+.make_sled_input_sleti {
     margin-bottom:20px;
     font-size:20px;
     padding:5px;
