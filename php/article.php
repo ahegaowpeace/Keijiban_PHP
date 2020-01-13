@@ -10,8 +10,8 @@
 	define('DB_DATABASE', 'keijiban_db');
 	define('DB_USERNAME', 'root');
 	define('DB_PASSWORD', 'password');
-	define('PDO_DSN', 'mysql:host=435ce8cd4e5a;dbname=' . DB_DATABASE);
-	$gip = '3.114.249.132';
+	define('PDO_DSN', 'mysql:host=【MySQLコンテナID】;dbname=' . DB_DATABASE);
+	$gip = '【WEBサーバIP】';
 	$title_id = $_SERVER['QUERY_STRING'];
 
 	$first_sql = "SELECT title FROM title_table WHERE title_id='{$title_id}'";
